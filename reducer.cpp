@@ -239,7 +239,7 @@ int main() {
 
 
 
-    // 最后一个key需要单独处理
+    //最后一个key需要单独处理
     if (!points.empty()) {
 
         for (const auto &point : points) {
@@ -271,12 +271,12 @@ int main() {
         points.clear();
         polygons.clear();
 
-        // 输出结果
+        //输出结果
         for (const auto &entry : pointCountMap) {
             cout << "Polygon ID: " << entry.first << ", Points count: " << entry.second << endl;
         }
 
-        // 最后一个key时更新key数
+        //最后一个key时更新key数
         totalKeysProcessed++;
 
         auto forLoopEnd2 = high_resolution_clock::now(); 
